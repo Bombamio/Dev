@@ -17,7 +17,7 @@ class Category(models.Model):
         default=True,
         help_text='Снимите галочку, чтобы скрыть публикацию.',
     )
-    created_at = models.DateTimeField('Добавлено', auto_now=True)
+    created_at = models.DateTimeField('Добавлено', auto_now_add=True)
 
     class Meta:
         verbose_name = 'категория'
@@ -34,7 +34,7 @@ class Location(models.Model):
         default=True,
         help_text='Снимите галочку, чтобы скрыть публикацию.',
     )
-    created_at = models.DateTimeField('Добавлено', auto_now=True)
+    created_at = models.DateTimeField('Добавлено', auto_now_add=True)
 
     class Meta:
         verbose_name = 'местоположение'
@@ -81,7 +81,7 @@ class Post(models.Model):
         default=True,
         help_text='Снимите галочку, чтобы скрыть публикацию.',
     )
-    created_at = models.DateTimeField('Добавлено', auto_now=True)
+    created_at = models.DateTimeField('Добавлено', auto_now_add=True)
 
     class Meta:
         verbose_name = 'публикация'
